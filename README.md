@@ -10,6 +10,11 @@ Storybook: [https://swapi-explorer-storybook.netlify.app/](https://swapi-explore
 
 ## Screenshots
 
+<img width="1512" height="856" alt="Screenshot 2026-02-26 at 21 49 39" src="https://github.com/user-attachments/assets/f42cd1b0-7731-4564-a995-5b72ea692527" />
+
+<img width="1509" height="860" alt="Screenshot 2026-02-26 at 21 49 49" src="https://github.com/user-attachments/assets/470fec47-38e4-4d31-b532-0d1d7dd0162c" />
+
+<img width="1509" height="860" alt="Screenshot 2026-02-26 at 21 49 58" src="https://github.com/user-attachments/assets/c3d3afa4-dc5d-432a-bd4c-7e2ce9bedd3f" />
 
 ## What this solves
 
@@ -163,27 +168,3 @@ Run Playwright E2E:
 ```bash
 pnpm run test:e2e:playwright
 ```
-
-## Storybook on Netlify
-
-Storybook is a separate static site from the main app bundle. To view Storybook on Netlify you deploy the Storybook static output (`storybook-static/`) as its own Netlify site.
-
-1. Build Storybook:
-
-```bash
-pnpm run build-storybook
-```
-
-1. Deploy `storybook-static/`:
-   - Create a new Netlify site (e.g. `swapi-explorer-storybook`)
-   - Build command: `pnpm run build-storybook`
-   - Publish directory: `storybook-static`
-
-After deploy, you’ll get a separate Storybook URL you can share and test.
-
-## Notes
-
-- Poppins font is loaded globally.
-- Dark mode preference is persisted in localStorage.
-- `react-window` is intentionally used only when suggestion list length is high.
-- One static lint warning about inline style can appear around virtualized rows because `react-window` requires passing the computed `style` prop for correct positioning.
