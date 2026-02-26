@@ -4,6 +4,8 @@ A polished, single-page Star Wars people search experience using SWAPI.
 
 ## Live demo
 
+Video: [https://www.loom.com/share/7b391ddddd7f46e9b9715ea721ee94f4/](https://www.loom.com/share/7b391ddddd7f46e9b9715ea721ee94f4/)
+
 App: [https://swapi-exporer.netlify.app/](https://swapi-exporer.netlify.app/)
 
 Storybook: [https://swapi-explorer-storybook.netlify.app/](https://swapi-explorer-storybook.netlify.app/)
